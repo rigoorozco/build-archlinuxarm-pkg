@@ -3,9 +3,13 @@
 
 buildarch=8
 
+# git information
+_user_name=steev
+_repo_name=linux
+_commit_hash=d9bc77d4a87d37eda054cf1aa472424dec743cb2
+
 pkgbase=linux-aarch64
-_download_name=linux-6.0.y
-_srcname=linux-linux-6.0.y
+_srcname=${_repo_name}-${_commit_hash}
 _kernelname=${pkgbase#linux}
 _desc="AArch64 multi-platform"
 pkgver=6.0.9
@@ -15,11 +19,11 @@ url="http://www.kernel.org/"
 license=('GPL2')
 makedepends=('xmlto' 'docbook-xsl' 'kmod' 'inetutils' 'bc' 'git' 'uboot-tools' 'dtc')
 options=('!strip')
-source=("https://codeload.github.com/steev/linux/tar.gz/refs/heads/${_download_name}"
+source=("https://codeload.github.com/${_user_name}/${_repo_name}/tar.gz/${_commit_hash}"
         'linux.preset'
         '60-linux.hook'
         '90-linux.hook')
-md5sums=('650841800cfdb0799f7c00870f003fb1'
+md5sums=('8c70c24d60b064288d5590be79212434'
          '41cb5fef62715ead2dd109dbea8413d6'
          '0a5f16bfec6ad982a2f6782724cca8ba'
          '3dc88030a8f2f5a5f97266d99b149f77')
