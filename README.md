@@ -17,7 +17,7 @@ If you get the following error:
 ==> ERROR: The package group has already been built. (use -f to overwrite)
 ```
 
-You should clear out the downloaded kernel source by running:
+You should clear out the package products by running:
 ```
 rm -rf package/*.tar.zst package/pkg
 ```
