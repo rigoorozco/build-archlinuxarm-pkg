@@ -8,7 +8,7 @@ _user_name=steev
 _repo_name=linux
 _commit_hash=d9bc77d4a87d37eda054cf1aa472424dec743cb2
 
-pkgbase=linux-aarch64
+pkgbase=linux-yoga
 _srcname=${_repo_name}-${_commit_hash}
 _kernelname=${pkgbase#linux}
 _desc="AArch64 multi-platform"
